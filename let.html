@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Hoisting</h2>
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+<p id="demo"></p>
+
+<script>
+try {
+  let firstline ="Variables defined with let cannot be redeclared." ;
+  let middleline ="Variables defined with let must be Declared before use.";
+   lastline="Variables defined with let have Block Scope.";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = lastline;
+}
+</script>
+
+</body>
+</html>
